@@ -4,6 +4,7 @@ This document provides a combined specification of SNIRF data format along with 
 a. It is requiedted by Marion to save raw red and IR data, regardless the fact SNIRF specification does not support such tipes of data<br>
 b. Homer3 expects to see label for data type HbO, HbR.<br>
 c minimum number of sample in snirf file is 9. This is a Homer3 reqirement.<br>
+d hmrR_BandpassFilt requires data larger than 15 samples.
 
 ### Intro
 
@@ -129,6 +130,7 @@ It is currently **unknown** whether multiple `aux` groups should be numbered (e.
 |date|description|
 |----|-----------|
 ||no changes|
+
 
 
 
