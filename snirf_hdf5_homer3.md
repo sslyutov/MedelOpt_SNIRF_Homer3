@@ -55,7 +55,7 @@ Every segment/acquisition of data should be saved into an individual "SNIRF" fil
 
 | Name            | HDF5 Type           | Description                                                                                         |
 |-----------------|---------------------|-----------------------------------------------------------------------------------------------------|
-| dataTimeSeries  | 2-dimensional Dataset, 64-bit floating-point | First dimension: sample index (s) <br> Second dimension: channel index (c) <br> Data is ordered as:<br>`arr[s0][c0], arr[s0][c1], ..., arr[sn][c0], arr[sn][c1], ..., arr[sn][c_last]` |
+| 🟢dataTimeSeries  | 2-dimensional Dataset, 64-bit floating-point | First dimension: sample index (s) <br> Second dimension: channel index (c) <br> Data is ordered as:<br>`arr[s0][c0], arr[s0][c1], ..., arr[sn][c0], arr[sn][c1], ..., arr[sn][c_last]` |
 
 
 ### Multiple `measurementList` groups exist within the `data` group.  
@@ -63,11 +63,11 @@ The number of entries must match the number of channels in `dataTimeSeries`.
 
 | Field           | HDF5 Type                        | Description                                        |
 |-----------------|----------------------------------|----------------------------------------------------|
-| `dataType`        | Scalar Dataset, 32-bit integer | Indicates data type (is the value 0-based or 1-based?) |
-| `dataTypeIndex`   | Scalar Dataset, 32-bit integer | Index for data type (is the value 0-based or 1-based?) |
-| `detectorIndex`   | Scalar Dataset, 32-bit integer | Index of the detector (is the value 0-based or 1-based?) |
-| `sourceIndex`     | Scalar Dataset, 32-bit integer | Index of the source (is the value 0-based or 1-based?) |
-| `wavelengthIndex` | Scalar Dataset, 32-bit integer | Index of the wavelength (is the value 0-based or 1-based?) |
+| 🟡`dataType`        | Scalar Dataset, 32-bit integer | Indicates data type 1 -  |
+| 🟡`dataTypeIndex`   | Scalar Dataset, 32-bit integer | Index for data type. 1 - amplitude |
+|  🟢`detectorIndex`   | Scalar Dataset, 32-bit integer | Index of the detector (is the value 0-based or 1-based?) |
+|  🟢`sourceIndex`     | Scalar Dataset, 32-bit integer | Index of the source (is the value 0-based or 1-based?) |
+|  🟢`wavelengthIndex` | Scalar Dataset, 32-bit integer | Index of the wavelength (is the value 0-based or 1-based?) |
 
 
 
@@ -110,10 +110,10 @@ MedelOpt may support up to 4 triggers. Each `stim` group corresponds to one auxi
 
 | Field   | Type                             | Description                                                                 |
 |---------|----------------------------------|-----------------------------------------------------------------------------|
-| `data`  | 2-dimensional Dataset 64-bit floating-point            | First dimension: data index; second dimension: measurement index.  
+| 🔴`data`  | 2-dimensional Dataset 64-bit floating-point            | First dimension: data index; second dimension: measurement index.  
 Data is organized as:  
 `data[0][0], data[0][1], data[0][2], data[1][0], data[1][1], data[1][2]` |
-| `name`  | Scalar Dataset, String  Length = variable, padding = `H5T_STR_NULLTERM`, cset = `H5T_CSET_UTF8`||
+| 🔴`name`  | Scalar Dataset, String  Length = variable, padding = `H5T_STR_NULLTERM`, cset = `H5T_CSET_UTF8`||
 Notes:
 
 ### aux Group
@@ -130,6 +130,7 @@ It is currently **unknown** whether multiple `aux` groups should be numbered (e.
 |date|description|
 |----|-----------|
 ||no changes|
+
 
 
 
