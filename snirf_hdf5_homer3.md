@@ -72,32 +72,32 @@ The number of entries must match the number of channels in `dataTimeSeries`.
 |-----------------|----------------------------------|----------------------------------------------------|
 | 🟡`dataType`        | Scalar Dataset, 32-bit integer | Indicates data type 1 -  |
 | 🟡`dataTypeIndex`   | Scalar Dataset, 32-bit integer | Index for data type. 1 - amplitude |
-|  🟢`detectorIndex`   | Scalar Dataset, 32-bit integer | Index of the detector (is the value 0-based or 1-based?) |
-|  🟢`sourceIndex`     | Scalar Dataset, 32-bit integer | Index of the source (is the value 0-based or 1-based?) |
-|  🟢`wavelengthIndex` | Scalar Dataset, 32-bit integer | Index of the wavelength (is the value 0-based or 1-based?) |
+| 🟢`detectorIndex`   | Scalar Dataset, 32-bit integer | Index of the detector (is the value 0-based or 1-based?) |
+| 🟢`sourceIndex`     | Scalar Dataset, 32-bit integer | Index of the source (is the value 0-based or 1-based?) |
+| 🟢`wavelengthIndex` | Scalar Dataset, 32-bit integer | Index of the wavelength (is the value 0-based or 1-based?) |
 
 
 
 | Field           | HDF5 Type                         | Description                                                                 |
 |-----------------|-----------------------------------|-----------------------------------------------------------------------------|
-| `time`          | 1-dimensional array, 64-bit floating-point | Number of elements must match the number of samples in `dataTimeSeries`.   |
+| 🟢`time`          | 1-dimensional array, 64-bit floating-point | Number of elements must match the number of samples in `dataTimeSeries`.   |
 
 
 ### metaDataTags Group
 
-One `metaDataTags` group is present per `nirs` group.
+One 🟡`metaDataTags` group is present per `nirs` group. mandatory for SNIRF format, not required in Homer3
 
 | Field             | HDF5 Type   | Description                                |
 |-------------------|-------------|--------------------------------------------|
-| `SubjectID`       | String Length = variable, padding = `H5T_STR_NULLTERM`, cset = `H5T_CSET_UTF8` ||
-| `MeasurementDate` | String Length = variable, padding = `H5T_STR_NULLTERM`, cset = `H5T_CSET_UTF8` ||
-| `MeasurementTime` | String Length = variable, padding = `H5T_STR_NULLTERM`, cset = `H5T_CSET_UTF8` ||
-| `LengthUnit`      | String Length = variable, padding = `H5T_STR_NULLTERM`, cset = `H5T_CSET_UTF8` ||
-| `TimeUnit`        | String Length = variable, padding = `H5T_STR_NULLTERM`, cset = `H5T_CSET_UTF8` ||
-| `FrequencyUnit`   | String Length = variable, padding = `H5T_STR_NULLTERM`, cset = `H5T_CSET_UTF8` ||
-| `SubjectName`     | String Length = variable, padding = `H5T_STR_NULLTERM`, cset = `H5T_CSET_UTF8` ||
-| `StudyID`         | String Length = variable, padding = `H5T_STR_NULLTERM`, cset = `H5T_CSET_UTF8` ||
-| `ManufacturerName`| String Length = variable, padding = `H5T_STR_NULLTERM`, cset = `H5T_CSET_UTF8` ||
+| 🟡`SubjectID`       | String Length = variable, padding = `H5T_STR_NULLTERM`, cset = `H5T_CSET_UTF8` ||
+| 🟡`MeasurementDate` | String Length = variable, padding = `H5T_STR_NULLTERM`, cset = `H5T_CSET_UTF8` ||
+| 🟡`MeasurementTime` | String Length = variable, padding = `H5T_STR_NULLTERM`, cset = `H5T_CSET_UTF8` ||
+| 🟡`LengthUnit`      | String Length = variable, padding = `H5T_STR_NULLTERM`, cset = `H5T_CSET_UTF8` ||
+| 🟡`TimeUnit`        | String Length = variable, padding = `H5T_STR_NULLTERM`, cset = `H5T_CSET_UTF8` ||
+| 🟡`FrequencyUnit`   | String Length = variable, padding = `H5T_STR_NULLTERM`, cset = `H5T_CSET_UTF8` ||
+| 🟡`SubjectName`     | String Length = variable, padding = `H5T_STR_NULLTERM`, cset = `H5T_CSET_UTF8` ||
+| 🟡`StudyID`         | String Length = variable, padding = `H5T_STR_NULLTERM`, cset = `H5T_CSET_UTF8` ||
+| 🟡`ManufacturerName`| String Length = variable, padding = `H5T_STR_NULLTERM`, cset = `H5T_CSET_UTF8` ||
 
 
 ### probe Group
@@ -137,6 +137,7 @@ It is currently **unknown** whether multiple `aux` groups should be numbered (e.
 |date|description|
 |----|-----------|
 ||no changes|
+
 
 
 
