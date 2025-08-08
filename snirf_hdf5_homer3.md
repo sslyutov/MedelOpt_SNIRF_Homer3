@@ -44,6 +44,13 @@ d hmrR_BandpassFilt requires data larger than 15 samples.
 
 Every segment/acquisition of data should be saved into an individual "SNIRF" file.
 
+### legend
+|color code|description|
+|---|---|
+|🔴| required, high severity, requires addition information|
+|🟡| low severiry |
+|🟢| implemented in AcqKnowledge |
+
 ### root
 | Name            | HDF5 Type           | Description                                                          |
 |-----------------|---------------------|----------------------------------------------------------------------|
@@ -99,9 +106,9 @@ Defines spatial and spectral configuration.
 
 | Field           | HDF5 Type                            | Description                                                |
 |-----------------|----------------------------------|------------------------------------------------------------|
-| `detectorPos3D` | 2-dimensional Dataset, 64-bit floating-point | 3D positions of detectors (e.g., `[nDetectors][3]`)        |
-| `sourcePos3D`   | 2-dimensional Dataset, 64-bit floating-point | 3D positions of sources (e.g., `[nSources][3]`)            |
-| `wavelengths`   | 1-dimensional Dataset, 64-bit floating-point | Contains exactly 2 elements representing wavelengths used  |
+| 🟡`detectorPos3D` | 2-dimensional Dataset, 64-bit floating-point | 3D positions of detectors (e.g., `[nDetectors][3]`)        |
+| 🟡`sourcePos3D`   | 2-dimensional Dataset, 64-bit floating-point | 3D positions of sources (e.g., `[nSources][3]`)            |
+| 🟢`wavelengths`   | 1-dimensional Dataset, 64-bit floating-point | Contains exactly 2 elements representing wavelengths used  |
 
 ### stim1, stim2, ..., stimN Groups
 
@@ -130,6 +137,7 @@ It is currently **unknown** whether multiple `aux` groups should be numbered (e.
 |date|description|
 |----|-----------|
 ||no changes|
+
 
 
 
