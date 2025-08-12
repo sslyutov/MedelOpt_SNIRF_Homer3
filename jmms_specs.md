@@ -70,7 +70,6 @@ The data is stored in json format
       "plot": 1, 
       "value": 0
     },
-
     {
       "id": "EEG5", 
       "label": "EEG-5", 
