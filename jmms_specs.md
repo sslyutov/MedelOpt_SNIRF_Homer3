@@ -18,21 +18,18 @@ The data is stored in json format
 |eegChannels[]|plot|number|1 = channel is displayed/visible; 0 = not displayed|
 |eegChannels[]|value|number|1 = channel is plotted in the output panel; 0 = not plotted|
 |root|channels|array|Collection of optode pairs configuration|
-|channels[]||name|string|Fixed format: <source_id>_<detector_id> (e.g., "LED1_DET1")|
-|channels[]||distance_cm|number float|Distance between source and detector in centimeters (e.g., 2.9)|
- 
-      "montage_positions": [
-    {
-      "position": "Oz",
-      "medelopt": "LED1",
-      "dist_to_cz_cm": 21,
-      "dist_to_middle_of_curve_cm": 11.4,
-	  "pos2D_X_mm": -85.0,
-	  "pos2D_Y_mm": 85.0,
-	  "pos3D_X_mm": -45.3,
-	  "pos3D_Y_mm": 62.26,
-	  "pos3D_Z_mm": -9.39,
-    },
+|channels[]|name|string|Fixed format: <source_id>_<detector_id> (e.g., "LED1_DET1")|
+|channels[]|distance_cm|number (float)|Distance between source and detector in centimeters (e.g., 2.9)|
+|root|montage_positions|array|Collection of montage position descriptions|
+|montage_positions[]|position|string|Standard position name (e.g., "Oz")|
+|montage_positions[]|medelopt|string|Optode identifier (e.g., "LED1" for LED and "DET1" for detector)|
+|montage_positions[]|dist_to_cz_cm|string|Distance to CZ in centimeters (e.g., "21")|
+|montage_positions[]|dist_to_middle_of_curve_cm|number (float)|Distance to middle of head curve in centimeters (e.g., 11.4)|
+|montage_positions[]|pos2D_X_mm|number (float)|2D X position in millimeters (e.g., -85.0)|
+|montage_positions[]|pos2D_Y_mm|number (float)|2D Y position in millimeters (e.g., 85.0)|
+|montage_positions[]|pos3D_X_mm|number (float)|3D X position in millimeters (e.g., -45.3)|
+|montage_positions[]|pos3D_Y_mm|number (float)|3D Y position in millimeters (e.g., 62.26)|
+|montage_positions[]|pos3D_Z_mm|number (float)|3D Z position in millimeters (e.g., -9.39)|
 
 
 ### example of the file ###
