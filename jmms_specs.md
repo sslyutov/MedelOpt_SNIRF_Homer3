@@ -14,13 +14,12 @@ The data is stored in json format
 
 |parent|name|type|description|
 |---|---|---|---|
-|root|eegChannels|array||
-|eegChannels|property||element of eegChannels array|
-|eegChannels|id|string|id of the element used for programmatic detecting of this object. example "EEG1".
-      |label|string|example "EEG-1 "
-      |acquire|number 1, 
-      |plot|number| 1, 
-      |value|number| 0
+|root|eegChannels|array|Array of EEG channel configuration objects|
+|eegChannels[]|id|string|id of the element used for programmatic detecting of this object. example "EEG1".
+|eegChannels[]|label|string|Human-readable label (e.g., "EEG-1")
+|eegChannels[]|acquire|number|1 to indicate the channel is acquired; 0 otherwise| 
+|eegChannels[]|plot|number|1 to indicate the channel is displayed/visible; 0 otherwise|
+|eegChannels[]|value|number|1 to indicate the channel is plot of output panel; 0 otherwise|
 
   
 
