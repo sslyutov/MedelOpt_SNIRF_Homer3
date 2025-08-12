@@ -7,21 +7,24 @@ The data stored in json format
 |root|version|string|description of MeMpSoft|
 |root|participant_id|number|participant id as a number|
 
-|root|name|type|description|
+|parent|name|type|description|
 |---|---|---|---|
-|root|head_distances|array||
+|root|head_distances|property||
 |head_distances|nasion_inion|string number|example "57.0 cm"|
 |head_distances|lpa_rpa|string number|example "58.0 cm"|
 |head_distances|circumference|string number|example"57.0 cm"|
 
-  "eegChannels": [
-    {
-      "id": "EEG1", 
-      "label": "EEG-1", 
-      "acquire": 1, 
-      "plot": 1, 
-      "value": 0
-    },
+|parent|name|type|description|
+|---|---|---|---|
+|root|eegChannels|array||
+|eegChannels|property||element of eegChannels array|
+|eegChannels|id|string|id of the element used for programmatic detecting of this object. example "EEG1".
+      |label|string|example "EEG-1 "
+      |acquire|number 1, 
+      |plot|number| 1, 
+      |value|number| 0
+
+  
 
   "channels": [
     { "name": "LED1_DET1", "distance_cm": 2.9 },
