@@ -1,18 +1,16 @@
-file intended to be used for transfer of fnirs montage configuration from MeMoSoft(Seenel Imaging) into AcqKnowledge(Biopac Systems, Inc.)
-The data stored in json format
+This file contains the fNIRS montage configuration data in a format intended for direct transfer from MeMoSoft (Seenel Imaging) to AcqKnowledge (Biopac Systems, Inc.), ensuring compatibility of optode layout, channel assignments, and acquisition settings between the two platforms.
+The data is stored in json format
+
 ### file structure ###
 
 |parent|name|type|description|
 |---|---|---|---|
-|root|version|string|description of MeMpSoft|
-|root|participant_id|number|participant id as a number|
-
-|parent|name|type|description|
-|---|---|---|---|
-|root|head_distances|property||
-|head_distances|nasion_inion|string number|example "57.0 cm"|
-|head_distances|lpa_rpa|string number|example "58.0 cm"|
-|head_distances|circumference|string number|example"57.0 cm"|
+|root|version|string|Description of MeMpSoft version|
+|root|participant_id|number|Participant ID as a numeric value|
+|root|head_distances|object|Contains head measurement properties|
+|head_distances|nasion_inion|string number|Distance from nasion to inion (e.g., "57.0 cm")|
+|head_distances|lpa_rpa|string number|Distance from left preauricular point to right preauricular point (e.g., "58.0 cm")|
+|head_distances|circumference|string number|Head circumference (e.g., "57.0 cm")|
 
 |parent|name|type|description|
 |---|---|---|---|
