@@ -244,4 +244,4 @@ The data is stored in json format
       "dist_to_middle_of_curve_cm": 11.4<br>
     }<br>
   ]<br>
-}    
+}  
