@@ -21,7 +21,7 @@ The data is stored in json format
 |🟢🟩head_distances|nasion_inion|string number|Distance from nasion to inion (e.g., "57.0 cm")|
 |🟢🟩head_distances|lpa_rpa|string number|Distance from left preauricular point to right preauricular point (e.g., "58.0 cm")|
 |🟢🟩head_distances|circumference|string number|Head circumference (e.g., "57.0 cm")|
-|🟢🟩root|eegChannels|array|Array of EEG channel configuration objects|
+|🟢🟨root|eegChannels|array|Array of EEG channel configuration objects|
 |🟢🟨eegChannels[]|id|string|ID used for programmatic detection of this element (e.g., "EEG1")|
 |🟢🟨eegChannels[]|label|string|Human-readable label (e.g., "EEG-1")|
 |🟢🟨eegChannels[]|acquire|number|1 = channel is acquired; 0 = not acquired| 
