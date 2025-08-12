@@ -34,215 +34,214 @@ The data is stored in json format
 
 ### example of the file ###
 {
-  "version": "MeMoSoft v1.0",\n
-  "participant_id": 1,\n
-  "head_distances": {\n
-    "nasion_inion": "57.0 cm",\n
-    "lpa_rpa": "58.0 cm",\n
-    "circumference": "57.0 cm"\n
-  },\n
-  "eegChannels": [\n
-    {\n
-      "id": "EEG1",\n 
-      "label": "EEG-1",\n 
-      "acquire": 1,\n 
-      "plot": 1,\n 
-      "value": 0\n
-    },\n
-    {\n
-      "id": "EEG2",\n 
-      "label": "EEG-2",\n 
-      "acquire": 1,\n 
-      "plot": 1,\n 
-      "value": 0\n
-    },\n
-    {\n
-      "id": "EEG3",\n 
-      "label": "EEG-3",\n 
-      "acquire": 1,\n 
-      "plot": 1,\n 
-      "value": 0\n
-    },\n
-    {\n
-      "id": "EEG4",\n 
-      "label": "EEG-4",\n 
-      "acquire": 1,\n 
-      "plot": 1,\n 
-      "value": 0\n
-    },\n
-    {\n
-      "id": "EEG5",\n 
-      "label": "EEG-5",\n 
-      "acquire": 1,\n 
-      "plot": 0,\n 
-      "value": 0\n
-    },\n
-    {\n
-      "id": "EEG6",\n 
-      "label": "EEG-6",\n 
-      "acquire": 1,\n 
-      "plot": 0,\n 
-      "value": 0\n
-    },\n
-    {\n
-      "id": "EEG7",\n 
-      "label": "EEG-7",\n 
-      "acquire": 1,\n 
-      "plot": 1,\n 
-      "value": 0\n
-    },\n
-    {\n
-      "id": "EEG8",\n 
-      "label": "EEG-8",\n 
-      "acquire": 1,\n 
-      "plot": 0,\n 
-      "value": 0\n
-    }\n
-  ],\n
-  "channels": [\n
-    { "name": "LED1_DET1", "distance_cm": 2.9 },\n
-    { "name": "LED1_DET2", "distance_cm": 3.2 },\n
-    { "name": "LED1_DET3", "distance_cm": 3.2 },\n
-    { "name": "LED1_DET4", "distance_cm": 3.2 },\n
-    { "name": "LED2_DET5", "distance_cm": 3.2 },\n
-    { "name": "LED2_DET6", "distance_cm": 3.2 },\n
-    { "name": "LED2_DET7", "distance_cm": 3.2 },\n
-    { "name": "LED3_DET8", "distance_cm": 3.2 },\n
-    { "name": "LED3_DET9", "distance_cm": 3.2 },\n
-    { "name": "LED3_DET10", "distance_cm": 3.2 },\n
-    { "name": "LED4_DET11", "distance_cm": 3.2 },\n
-    { "name": "LED4_DET12", "distance_cm": 3.2 },\n
-    { "name": "LED4_DET13", "distance_cm": 3.2 },\n
-    { "name": "LED4_DET14", "distance_cm": 3.2 },\n
-    { "name": "LED4_DET15", "distance_cm": 3.2 },\n
-    { "name": "LED4_DET16", "distance_cm": 3.2 }\n
-  ],\n
-  "montage_positions": [\n
-    {\n
-      "position": "Oz",\n
-      "medelopt": "LED1",\n
-      "dist_to_cz_cm": 21,\n
-      "dist_to_middle_of_curve_cm": 11.4,\n
-      "pos2D_X_mm": -85.0,\n
-      "pos2D_Y_mm": 85.0,\n
-      "pos3D_X_mm": -45.3,\n
-      "pos3D_Y_mm": 62.26,\n
-      "pos3D_Z_mm": -9.39,\n
-    },\n
-    {\n
-      "position": "POz",\n
-      "medelopt": "DET1",\n
-      "dist_to_cz_cm": 21,\n
-      "dist_to_middle_of_curve_cm": 11.4\n
-    },\n
-    {\n
-      "position": "Iz",\n
-      "medelopt": "DET2",\n
-      "dist_to_cz_cm": 21,\n
-      "dist_to_middle_of_curve_cm": 11.4\n
-    },\n
-    {\n
-      "position": "O1",\n
-      "medelopt": "DET3",\n
-      "dist_to_cz_cm": 21,\n
-      "dist_to_middle_of_curve_cm": 11.4\n
-    },\n
-    {\n
-      "position": "O2",\n
-      "medelopt": "DET4",\n
-      "dist_to_cz_cm": 21,\n
-      "dist_to_middle_of_curve_cm": 11.4\n
-    },\n
-    {\n
-      "position": "P7",\n
-      "medelopt": "LED2",\n
-      "dist_to_cz_cm": 21,\n
-      "dist_to_middle_of_curve_cm": 11.4\n
-    },\n
-    {\n
-      "position": "P9",\n
-      "medelopt": "DET5",\n
-      "dist_to_cz_cm": 21,\n
-      "dist_to_middle_of_curve_cm": 11.4\n
-    },\n
-    {\n
-      "position": "P5",\n
-      "medelopt": "DET6",\n
-      "dist_to_cz_cm": 21,\n
-      "dist_to_middle_of_curve_cm": 11.4\n
-    },\n
-    {\n
-      "position": "PO7",\n
-      "medelopt": "DET7",\n
-      "dist_to_cz_cm": 21,\n
-      "dist_to_middle_of_curve_cm": 11.4\n
-    },\n
-    {\n
-      "position": "P1",\n
-      "medelopt": "LED3",\n
-      "dist_to_cz_cm": 21,\n
-      "dist_to_middle_of_curve_cm": 11.4\n
-    },\n
-    {\n
-      "position": "P3",\n
-      "medelopt": "DET8",\n
-      "dist_to_cz_cm": 21,\n
-      "dist_to_middle_of_curve_cm": 11.4\n
-    },\n
-    {\n
-      "position": "PO3",\n
-      "medelopt": "DET9",\n
-      "dist_to_cz_cm": 21,\n
-      "dist_to_middle_of_curve_cm": 11.4\n
-    },\n
-    {\n
-      "position": "Pz",\n
-      "medelopt": "DET10",\n
-      "dist_to_cz_cm": 21,\n
-      "dist_to_middle_of_curve_cm": 11.4\n
-    },\n
-    {\n
-      "position": "PO8",\n
-      "medelopt": "LED4",\n
-      "dist_to_cz_cm": 21,\n
-      "dist_to_middle_of_curve_cm": 11.4\n
-    },\n
-    {\n
-      "position": "PO4",\n
-      "medelopt": "DET11",\n
-      "dist_to_cz_cm": 21,\n
-      "dist_to_middle_of_curve_cm": 11.4\n
-    },\n
-    {\n
-      "position": "P2",\n
-      "medelopt": "DET12",\n
-      "dist_to_cz_cm": 21,\n
-      "dist_to_middle_of_curve_cm": 11.4\n
-    },\n
-    {\n
-      "position": "P4",\n
-      "medelopt": "DET13",\n
-      "dist_to_cz_cm": 21,\n
-      "dist_to_middle_of_curve_cm": 11.4\n
-    },\n
-    {\n
-      "position": "P6",\n
-      "medelopt": "DET14",\n
-      "dist_to_cz_cm": 21,\n
-      "dist_to_middle_of_curve_cm": 11.4\n
-    },\n
-    {\n
-      "position": "P8",\n
-      "medelopt": "DET15",\n
-      "dist_to_cz_cm": 21,\n
-      "dist_to_middle_of_curve_cm": 11.4\n
-    },\n
-    {\n
-      "position": "P10",\n
-      "medelopt": "DET16",\n
-      "dist_to_cz_cm": 21,\n
-      "dist_to_middle_of_curve_cm": 11.4\n
-    }\n
-  ]\n
-}
-    
+  "version": "MeMoSoft v1.0",<br>
+  "participant_id": 1,<br>
+  "head_distances": {<br>
+    "nasion_inion": "57.0 cm",<br>
+    "lpa_rpa": "58.0 cm",<br>
+    "circumference": "57.0 cm"<br>
+  },<br>
+  "eegChannels": [<br>
+    {<br>
+      "id": "EEG1",<br> 
+      "label": "EEG-1",<br> 
+      "acquire": 1,<br> 
+      "plot": 1,<br> 
+      "value": 0<br>
+    },<br>
+    {<br>
+      "id": "EEG2",<br> 
+      "label": "EEG-2",<br> 
+      "acquire": 1,<br> 
+      "plot": 1,<br> 
+      "value": 0<br>
+    },<br>
+    {<br>
+      "id": "EEG3",<br> 
+      "label": "EEG-3",<br> 
+      "acquire": 1,<br> 
+      "plot": 1,<br> 
+      "value": 0<br>
+    },<br>
+    {<br>
+      "id": "EEG4",<br> 
+      "label": "EEG-4",<br> 
+      "acquire": 1,<br> 
+      "plot": 1,<br> 
+      "value": 0<br>
+    },<br>
+    {<br>
+      "id": "EEG5",<br> 
+      "label": "EEG-5",<br> 
+      "acquire": 1,<br> 
+      "plot": 0,<br> 
+      "value": 0<br>
+    },<br>
+    {<br>
+      "id": "EEG6",<br> 
+      "label": "EEG-6",<br> 
+      "acquire": 1,<br> 
+      "plot": 0,<br> 
+      "value": 0<br>
+    },<br>
+    {<br>
+      "id": "EEG7",<br> 
+      "label": "EEG-7",<br> 
+      "acquire": 1,<br> 
+      "plot": 1,<br> 
+      "value": 0<br>
+    },<br>
+    {<br>
+      "id": "EEG8",<br> 
+      "label": "EEG-8",<br> 
+      "acquire": 1,<br> 
+      "plot": 0,<br> 
+      "value": 0<br>
+    }<br>
+  ],<br>
+  "channels": [<br>
+    { "name": "LED1_DET1", "distance_cm": 2.9 },<br>
+    { "name": "LED1_DET2", "distance_cm": 3.2 },<br>
+    { "name": "LED1_DET3", "distance_cm": 3.2 },<br>
+    { "name": "LED1_DET4", "distance_cm": 3.2 },<br>
+    { "name": "LED2_DET5", "distance_cm": 3.2 },<br>
+    { "name": "LED2_DET6", "distance_cm": 3.2 },<br>
+    { "name": "LED2_DET7", "distance_cm": 3.2 },<br>
+    { "name": "LED3_DET8", "distance_cm": 3.2 },<br>
+    { "name": "LED3_DET9", "distance_cm": 3.2 },<br>
+    { "name": "LED3_DET10", "distance_cm": 3.2 },<br>
+    { "name": "LED4_DET11", "distance_cm": 3.2 },<br>
+    { "name": "LED4_DET12", "distance_cm": 3.2 },<br>
+    { "name": "LED4_DET13", "distance_cm": 3.2 },<br>
+    { "name": "LED4_DET14", "distance_cm": 3.2 },<br>
+    { "name": "LED4_DET15", "distance_cm": 3.2 },<br>
+    { "name": "LED4_DET16", "distance_cm": 3.2 }<br>
+  ],<br>
+  "montage_positions": [<br>
+    {<br>
+      "position": "Oz",<br>
+      "medelopt": "LED1",<br>
+      "dist_to_cz_cm": 21,<br>
+      "dist_to_middle_of_curve_cm": 11.4,<br>
+      "pos2D_X_mm": -85.0,<br>
+      "pos2D_Y_mm": 85.0,<br>
+      "pos3D_X_mm": -45.3,<br>
+      "pos3D_Y_mm": 62.26,<br>
+      "pos3D_Z_mm": -9.39,<br>
+    },<br>
+    {<br>
+      "position": "POz",<br>
+      "medelopt": "DET1",<br>
+      "dist_to_cz_cm": 21,<br>
+      "dist_to_middle_of_curve_cm": 11.4<br>
+    },<br>
+    {<br>
+      "position": "Iz",<br>
+      "medelopt": "DET2",<br>
+      "dist_to_cz_cm": 21,<br>
+      "dist_to_middle_of_curve_cm": 11.4<br>
+    },<br>
+    {<br>
+      "position": "O1",<br>
+      "medelopt": "DET3",<br>
+      "dist_to_cz_cm": 21,<br>
+      "dist_to_middle_of_curve_cm": 11.4<br>
+    },<br>
+    {<br>
+      "position": "O2",<br>
+      "medelopt": "DET4",<br>
+      "dist_to_cz_cm": 21,<br>
+      "dist_to_middle_of_curve_cm": 11.4<br>
+    },<br>
+    {<br>
+      "position": "P7",<br>
+      "medelopt": "LED2",<br>
+      "dist_to_cz_cm": 21,<br>
+      "dist_to_middle_of_curve_cm": 11.4<br>
+    },<br>
+    {<br>
+      "position": "P9",<br>
+      "medelopt": "DET5",<br>
+      "dist_to_cz_cm": 21,<br>
+      "dist_to_middle_of_curve_cm": 11.4<br>
+    },<br>
+    {<br>
+      "position": "P5",<br>
+      "medelopt": "DET6",<br>
+      "dist_to_cz_cm": 21,<br>
+      "dist_to_middle_of_curve_cm": 11.4<br>
+    },<br>
+    {<br>
+      "position": "PO7",<br>
+      "medelopt": "DET7",<br>
+      "dist_to_cz_cm": 21,<br>
+      "dist_to_middle_of_curve_cm": 11.4<br>
+    },<br>
+    {<br>
+      "position": "P1",<br>
+      "medelopt": "LED3",<br>
+      "dist_to_cz_cm": 21,<br>
+      "dist_to_middle_of_curve_cm": 11.4<br>
+    },<br>
+    {<br>
+      "position": "P3",<br>
+      "medelopt": "DET8",<br>
+      "dist_to_cz_cm": 21,<br>
+      "dist_to_middle_of_curve_cm": 11.4<br>
+    },<br>
+    {<br>
+      "position": "PO3",<br>
+      "medelopt": "DET9",<br>
+      "dist_to_cz_cm": 21,<br>
+      "dist_to_middle_of_curve_cm": 11.4<br>
+    },<br>
+    {<br>
+      "position": "Pz",<br>
+      "medelopt": "DET10",<br>
+      "dist_to_cz_cm": 21,<br>
+      "dist_to_middle_of_curve_cm": 11.4<br>
+    },<br>
+    {<br>
+      "position": "PO8",<br>
+      "medelopt": "LED4",<br>
+      "dist_to_cz_cm": 21,<br>
+      "dist_to_middle_of_curve_cm": 11.4<br>
+    },<br>
+    {<br>
+      "position": "PO4",<br>
+      "medelopt": "DET11",<br>
+      "dist_to_cz_cm": 21,<br>
+      "dist_to_middle_of_curve_cm": 11.4<br>
+    },<br>
+    {<br>
+      "position": "P2",<br>
+      "medelopt": "DET12",<br>
+      "dist_to_cz_cm": 21,<br>
+      "dist_to_middle_of_curve_cm": 11.4<br>
+    },<br>
+    {<br>
+      "position": "P4",<br>
+      "medelopt": "DET13",<br>
+      "dist_to_cz_cm": 21,<br>
+      "dist_to_middle_of_curve_cm": 11.4<br>
+    },<br>
+    {<br>
+      "position": "P6",<br>
+      "medelopt": "DET14",<br>
+      "dist_to_cz_cm": 21,<br>
+      "dist_to_middle_of_curve_cm": 11.4<br>
+    },<br>
+    {<br>
+      "position": "P8",<br>
+      "medelopt": "DET15",<br>
+      "dist_to_cz_cm": 21,<br>
+      "dist_to_middle_of_curve_cm": 11.4<br>
+    },<br>
+    {<br>
+      "position": "P10",<br>
+      "medelopt": "DET16",<br>
+      "dist_to_cz_cm": 21,<br>
+      "dist_to_middle_of_curve_cm": 11.4<br>
+    }<br>
+  ]<br>
+}    
