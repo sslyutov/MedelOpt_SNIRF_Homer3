@@ -11,22 +11,16 @@ The data is stored in json format
 |head_distances|nasion_inion|string number|Distance from nasion to inion (e.g., "57.0 cm")|
 |head_distances|lpa_rpa|string number|Distance from left preauricular point to right preauricular point (e.g., "58.0 cm")|
 |head_distances|circumference|string number|Head circumference (e.g., "57.0 cm")|
-
-|parent|name|type|description|
-|---|---|---|---|
 |root|eegChannels|array|Array of EEG channel configuration objects|
 |eegChannels[]|id|string|ID used for programmatic detection of this element (e.g., "EEG1")|
 |eegChannels[]|label|string|Human-readable label (e.g., "EEG-1")|
 |eegChannels[]|acquire|number|1 = channel is acquired; 0 = not acquired| 
 |eegChannels[]|plot|number|1 = channel is displayed/visible; 0 = not displayed|
 |eegChannels[]|value|number|1 = channel is plotted in the output panel; 0 = not plotted|
-
-  
-
-  "channels": [
-    { "name": "LED1_DET1", "distance_cm": 2.9 },
-    { "name": "LED1_DET2", "distance_cm": 3.2 }
-    ],
+|root|channels|array|Collection of optode pairs configuration|
+|channels[]||name|string|Fixed format: <source_id>_<detector_id> (e.g., "LED1_DET1")|
+|channels[]||distance_cm|number float|Distance between source and detector in centimeters (e.g., 2.9)|
+ 
       "montage_positions": [
     {
       "position": "Oz",
