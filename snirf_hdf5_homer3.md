@@ -50,6 +50,7 @@ Every segment/acquisition of data should be saved into an individual "SNIRF" fil
 |🔴| required, high severity, requires addition information|
 |🟡| low severiry |
 |🟢| implemented in AcqKnowledge |
+|🟩| supported by the Seenel Imaging Coversion Utility |
 
 ### root
 | Name            | HDF5 Type           | Description                                                          |
@@ -137,6 +138,7 @@ It is currently **unknown** whether multiple `aux` groups should be numbered (e.
 |date|description|
 |----|-----------|
 ||no changes|
+
 
 
 
