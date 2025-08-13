@@ -43,4 +43,4 @@ The data is stored in json format
 
 
 ### example of the file ###
-examples/eeg_fnirs.jmms
+[EEG fNIRS example](examples/eeg_fnirs.jmms)
