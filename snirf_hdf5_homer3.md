@@ -113,9 +113,9 @@ Defines spatial and spectral configuration.
 
 ### stim1, stim2, ..., stimN Groups
 
-These groups describe stimulus (trigger) events.  
+These groups describe stimulus (trigger) events as well as manually set markers in AcqKnowledge.  
 MedelOpt may support up to 4 triggers. Each `stim` group corresponds to one auxiliary trigger.
-Also a stim group create for each manual trigger set from AcqKnowledge. The duration for manual trigger is set to .001 second
+Also a stim group is created for each manual trigger set from AcqKnowledge. The duration for manual trigger is set to .001 second
 as a minimal value. The total number of stim groups depends on a number of event sources registered during a data acquisition.
 
 | Field   | Type                             | Description                                                                 |
@@ -125,6 +125,28 @@ Data is organized as:
 `data[0][0], data[0][1], data[0][2], data[1][0], data[1][1], data[1][2]` |
 | 🔴`name`  | Scalar Dataset, String  Length = variable, padding = `H5T_STR_NULLTERM`, cset = `H5T_CSET_UTF8`||
 Notes:
+
+|AcqKnowledge markers recognized as stim | description |
+|---|---|
+|kUser1EventType| user event set from keyboard during a data acquisition |
+|kUser2EventType| user event set from keyboard during a data acquisition |
+|kUser3EventType| user event set from keyboard during a data acquisition |
+|kUser4EventType| user event set from keyboard during a data acquisition |
+|kUser5EventType| user event set from keyboard during a data acquisition |
+|kUser6EventType| user event set from keyboard during a data acquisition |
+|kUser7EventType| user event set from keyboard during a data acquisition |
+|kUser8EventType| user event set from keyboard during a data acquisition |
+|kUser9EventType| user event set from keyboard during a data acquisition |
+|---|---|
+|kTrigger1OnEventType| MedelOpt device trigger 1 On|
+|kTrigger1OffEventType| MedelOpt device trigger 1 On - used for calculating a duration|
+|kTrigger2OnEventType| MedelOpt device trigger 2 On |
+|kTrigger2OffEventType| MedelOpt device trigger 2 On - used for calculating a duration|
+|kTrigger3OnEventType| MedelOpt device trigger 3 On |
+|kTrigger3OffEventType| MedelOpt device trigger 3 On - used for calculating a duration|
+|kTrigger4OnEventType| MedelOpt device trigger 4 On |
+|kTrigger4OffEventType| MedelOpt device trigger 4 On - used for calculating a duration|
+
 
 ### aux Group
 
@@ -140,6 +162,7 @@ It is currently **unknown** whether multiple `aux` groups should be numbered (e.
 |date|description|
 |----|-----------|
 ||no changes|
+
 
 
 
