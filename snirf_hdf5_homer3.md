@@ -115,6 +115,8 @@ Defines spatial and spectral configuration.
 
 These groups describe stimulus (trigger) events.  
 MedelOpt may support up to 4 triggers. Each `stim` group corresponds to one auxiliary trigger.
+Also a stim group create for each manual trigger set from AcqKnowledge. The duration for manual trigger is set to .001 second
+as a minimal value. The total number of stim groups depends on a number of event sources registered during a data acquisition.
 
 | Field   | Type                             | Description                                                                 |
 |---------|----------------------------------|-----------------------------------------------------------------------------|
@@ -138,6 +140,7 @@ It is currently **unknown** whether multiple `aux` groups should be numbered (e.
 |date|description|
 |----|-----------|
 ||no changes|
+
 
 
 
