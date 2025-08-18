@@ -138,14 +138,14 @@ Notes:
 |kUser8EventType| user event set from keyboard during a data acquisition |
 |kUser9EventType| user event set from keyboard during a data acquisition |
 |||
-|kTrigger1OnEventType| MedelOpt device trigger 1 On|
-|kTrigger1OffEventType| MedelOpt device trigger 1 On - used for calculating a duration|
-|kTrigger2OnEventType| MedelOpt device trigger 2 On |
-|kTrigger2OffEventType| MedelOpt device trigger 2 On - used for calculating a duration|
-|kTrigger3OnEventType| MedelOpt device trigger 3 On |
-|kTrigger3OffEventType| MedelOpt device trigger 3 On - used for calculating a duration|
-|kTrigger4OnEventType| MedelOpt device trigger 4 On |
-|kTrigger4OffEventType| MedelOpt device trigger 4 On - used for calculating a duration|
+|kTrigger1OnEventType| MedelOpt device trigger 1 On - used to get trigger starting timestamp|
+|kTrigger1OffEventType| MedelOpt device trigger 1 Off - used for calculating a duration|
+|kTrigger2OnEventType| MedelOpt device trigger 2 On - used to get trigger starting timestamp|
+|kTrigger2OffEventType| MedelOpt device trigger 2 Off - used for calculating a duration|
+|kTrigger3OnEventType| MedelOpt device trigger 3 On - used to get trigger starting timestamp|
+|kTrigger3OffEventType| MedelOpt device trigger 3 Off - used for calculating a duration|
+|kTrigger4OnEventType| MedelOpt device trigger 4 On - used to get trigger starting timestamp|
+|kTrigger4OffEventType| MedelOpt device trigger 4 Off - used for calculating a duration|
 
 
 ### aux Group
@@ -162,6 +162,7 @@ It is currently **unknown** whether multiple `aux` groups should be numbered (e.
 |date|description|
 |----|-----------|
 ||no changes|
+
 
 
 
