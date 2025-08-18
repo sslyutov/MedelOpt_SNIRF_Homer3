@@ -126,7 +126,7 @@ Data is organized as:
 | 🔴`name`  | Scalar Dataset, String  Length = variable, padding = `H5T_STR_NULLTERM`, cset = `H5T_CSET_UTF8`||
 Notes:
 
-|AcqKnowledge markers recognized as stim | description |
+|AcqKnowledge markers recognized as stim group| description |
 |---|---|
 |kUser1EventType| user event set from keyboard during a data acquisition |
 |kUser2EventType| user event set from keyboard during a data acquisition |
@@ -137,7 +137,7 @@ Notes:
 |kUser7EventType| user event set from keyboard during a data acquisition |
 |kUser8EventType| user event set from keyboard during a data acquisition |
 |kUser9EventType| user event set from keyboard during a data acquisition |
-|---|---|
+|||
 |kTrigger1OnEventType| MedelOpt device trigger 1 On|
 |kTrigger1OffEventType| MedelOpt device trigger 1 On - used for calculating a duration|
 |kTrigger2OnEventType| MedelOpt device trigger 2 On |
@@ -162,6 +162,7 @@ It is currently **unknown** whether multiple `aux` groups should be numbered (e.
 |date|description|
 |----|-----------|
 ||no changes|
+
 
 
 
