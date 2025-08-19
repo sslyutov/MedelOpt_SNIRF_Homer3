@@ -113,10 +113,13 @@ Defines spatial and spectral configuration.
 
 ### stim1, stim2, ..., stimN Groups
 
-These groups describe stimulus (trigger) events as well as manually set markers in AcqKnowledge.  
-MedelOpt may support up to 4 triggers. Each `stim` group corresponds to one auxiliary trigger.
+These groups describe stimulus (trigger) events as well as manually set markers in AcqKnowledge.<br>  
+MedelOpt may support up to 4 triggers. Each `stim` group corresponds to one auxiliary trigger.<br>
 Also a stim group is created for each manual trigger set from AcqKnowledge. The duration for manual trigger is set to .001 second
-as a minimal value. The total number of stim groups depends on a number of event sources registered during a data acquisition.
+as a minimal value.<br>
+The total number of stim groups depends on a number of event sources registered during a data acquisition.
+The trigger marker in AcqKnowledge is added on the second sample of a data acquisition if the trigger is set to on possition prior to a start of the data acquisition.
+<br>
 
 | Field   | Type                             | Description                                                                 |
 |---------|----------------------------------|-----------------------------------------------------------------------------|
@@ -162,6 +165,7 @@ It is currently **unknown** whether multiple `aux` groups should be numbered (e.
 |date|description|
 |----|-----------|
 ||no changes|
+
 
 
 
