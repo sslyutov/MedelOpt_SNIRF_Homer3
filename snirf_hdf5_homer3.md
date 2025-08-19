@@ -118,7 +118,7 @@ MedelOpt may support up to 4 triggers. Each `stim` group corresponds to one auxi
 Also a stim group is created for each manual trigger set from AcqKnowledge. The duration for manual trigger is set to .001 second
 as a minimal value.<br>
 The total number of stim groups depends on a number of event sources registered during a data acquisition.
-The trigger marker in AcqKnowledge is added on the second sample of a data acquisition if the trigger is set to on possition prior to a start of the data acquisition.
+In AcqKnowledge, if the trigger(gpio) is set to the ON position before the start of data acquisition, the trigger marker is added at the second sample.
 <br>
 
 | Field   | Type                             | Description                                                                 |
@@ -165,6 +165,7 @@ It is currently **unknown** whether multiple `aux` groups should be numbered (e.
 |date|description|
 |----|-----------|
 ||no changes|
+
 
 
 
