@@ -111,6 +111,22 @@ Defines spatial and spectral configuration.
 | 🟡`sourcePos3D`   | 2-dimensional Dataset, 64-bit floating-point | 3D positions of sources (e.g., `[nSources][3]`)            |
 | 🟢`wavelengths`   | 1-dimensional Dataset, 64-bit floating-point | Contains exactly 2 elements representing wavelengths used  |
 
+- **`sourcePos2D` / `sourcePos3D`**
+  - Always contain a number of records equal to the number of physical sources (LEDs) on the device.  
+  - Example: if the device has **16 LEDs**, the probe group will have **16 records**.  
+  - If the position for a source is undefined, its coordinate values are set to `0.0`.  
+
+- **`detectorPos2D` / `detectorPos3D`**
+  - Always contain a number of records equal to the number of physical detectors on the device.  
+  - Example: for **MedelOpt**, the number of records is **32**.  
+  - If the position for a detector is undefined, its coordinate values are set to `0.0`.  
+
+- **Indexing rule**
+  - The record index corresponds directly to the source or detector **ID**.  
+  - It does **not depend on the `measurementList` order** or discovery order.  
+  - Example: `sourcePos3D[5]` always represents the position of **source #6** (if indices are 1-based in the file).
+    
+
 ### stim1, stim2, ..., stimN Groups
 
 These groups describe stimulus (trigger) events as well as manually set markers in AcqKnowledge.<br>  
@@ -165,6 +181,7 @@ It is currently **unknown** whether multiple `aux` groups should be numbered (e.
 |date|description|
 |----|-----------|
 ||no changes|
+
 
 
 
