@@ -42,11 +42,11 @@ The data is stored in json format
 |🟢🟥montage_positions[]|pos3D_Z_mm|number (float)|3D Z position in millimeters (e.g., -9.39)|
 
 probe->montage_positions<br>
-&nbsppos2D_X_mm specifies the x-position in 2D for corresponding LED or DET (such as LED1 or DET1 see property 'medelopt').<br>
-&nbsppos2D_Y_mm specifies the y-position in 2D for corresponding LED or DET (such as LED1 or DET1 see property 'medelopt').<br>
-&nbsppos3D_X_mm specifies the x-position in 3D for corresponding LED or DET (such as LED1 or DET1 see property 'medelopt').<br>
-&nbsppos3D_Y_mm specifies the y-position in 3D for corresponding LED or DET (such as LED1 or DET1 see property 'medelopt').<br>
-&nbsppos3D_X_mm specifies the z-position in 3D for corresponding LED or DET (such as LED1 or DET1 see property 'medelopt').<br>
+&nbsp;pos2D_X_mm specifies the x-position in 2D for corresponding LED or DET (such as LED1 or DET1 see property 'medelopt').<br>
+&nbsp;pos2D_Y_mm specifies the y-position in 2D for corresponding LED or DET (such as LED1 or DET1 see property 'medelopt').<br>
+&nbsp;pos3D_X_mm specifies the x-position in 3D for corresponding LED or DET (such as LED1 or DET1 see property 'medelopt').<br>
+&nbsp;pos3D_Y_mm specifies the y-position in 3D for corresponding LED or DET (such as LED1 or DET1 see property 'medelopt').<br>
+&nbsp;pos3D_X_mm specifies the z-position in 3D for corresponding LED or DET (such as LED1 or DET1 see property 'medelopt').<br>
  
 
 ### example of the file ###
