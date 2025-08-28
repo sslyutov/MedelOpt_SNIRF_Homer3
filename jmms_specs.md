@@ -35,11 +35,11 @@ The data is stored in json format
 |🟢🟩montage_positions[]|medelopt|string|Optode identifier (e.g., "LED1" for LED and "DET1" for detector)|
 |🟢🟩montage_positions[]|dist_to_cz_cm|string|Distance to CZ in centimeters (e.g., "21")|
 |🟢🟩montage_positions[]|dist_to_middle_of_curve_cm|number (float)|Distance to middle of head curve in centimeters (e.g., 11.4)|
-|🔴🟥montage_positions[]|pos2D_X_mm|number (float)|2D X position in millimeters (e.g., -85.0)|
-|🔴🟥montage_positions[]|pos2D_Y_mm|number (float)|2D Y position in millimeters (e.g., 85.0)|
-|🔴🟥montage_positions[]|pos3D_X_mm|number (float)|3D X position in millimeters (e.g., -45.3)|
-|🔴🟥montage_positions[]|pos3D_Y_mm|number (float)|3D Y position in millimeters (e.g., 62.26)|
-|🔴🟥montage_positions[]|pos3D_Z_mm|number (float)|3D Z position in millimeters (e.g., -9.39)|
+|🟢🟥montage_positions[]|pos2D_X_mm|number (float)|2D X position in millimeters (e.g., -85.0)|
+|🟢🟥montage_positions[]|pos2D_Y_mm|number (float)|2D Y position in millimeters (e.g., 85.0)|
+|🟢🟥montage_positions[]|pos3D_X_mm|number (float)|3D X position in millimeters (e.g., -45.3)|
+|🟢🟥montage_positions[]|pos3D_Y_mm|number (float)|3D Y position in millimeters (e.g., 62.26)|
+|🟢🟥montage_positions[]|pos3D_Z_mm|number (float)|3D Z position in millimeters (e.g., -9.39)|
 
 probe->montage_positions
   pos2D_X_mm Identifies the x-position in 2D for an LED or DET with the corresponding value (such as LED1 or DET1) of the 'medelopt' property.
