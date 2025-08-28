@@ -41,13 +41,13 @@ The data is stored in json format
 |🟢🟥montage_positions[]|pos3D_Y_mm|number (float)|3D Y position in millimeters (e.g., 62.26)|
 |🟢🟥montage_positions[]|pos3D_Z_mm|number (float)|3D Z position in millimeters (e.g., -9.39)|
 
-probe->montage_positions
-  pos2D_X_mm Identifies the x-position in 2D for an LED or DET with the corresponding value (such as LED1 or DET1) of the 'medelopt' property.
-  pos2D_Y_mm Identifies the y-position in 2D for an LED or DET with the corresponding value (such as LED1 or DET1) of the 'medelopt' property.
-  pos3D_X_mm Identifies the x-position in 3D for an LED or DET with the corresponding value (such as LED1 or DET1) of the 'medelopt' property.
-  pos3D_Y_mm Identifies the y-position in 3D for an LED or DET with the corresponding value (such as LED1 or DET1) of the 'medelopt' property.
-  pos3D_X_mm Identifies the z-position in 3D for an LED or DET with the corresponding value (such as LED1 or DET1) of the 'medelopt' property.
-  
+probe->montage_positions<br>
+  pos2D_X_mm specifies the x-position in 2D for corresponding LED or DET (such as LED1 or DET1 see property 'medelopt').
+  pos2D_Y_mm specifies the y-position in 2D for corresponding LED or DET (such as LED1 or DET1 see property 'medelopt').
+  pos3D_X_mm specifies the x-position in 3D for corresponding LED or DET (such as LED1 or DET1 see property 'medelopt').
+  pos3D_Y_mm specifies the y-position in 3D for corresponding LED or DET (such as LED1 or DET1 see property 'medelopt').
+  pos3D_X_mm specifies the z-position in 3D for corresponding LED or DET (such as LED1 or DET1 see property 'medelopt').
+ 
 
 ### example of the file ###
 [EEG fNIRS example](examples/eeg_fnirs.jmms)
