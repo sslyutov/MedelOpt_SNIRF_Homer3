@@ -90,11 +90,11 @@
       "medelopt": "LED1",
       "dist_to_cz_cm": 21,
       "dist_to_middle_of_curve_cm": 11.4,
-      "pos2D_X_mm": -85.0,
-      "pos2D_Y_mm": 85.0,
-      "pos3D_X_mm": -45.3,
-      "pos3D_Y_mm": 62.26,
-      "pos3D_Z_mm": -9.39
+      "pos2D_X_cm": -85.0,
+      "pos2D_Y_cm": 85.0,
+      "pos3D_X_cm": -45.3,
+      "pos3D_Y_cm": 62.26,
+      "pos3D_Z_cm": -9.39
     },
     {
       "position": "POz",
@@ -211,4 +211,5 @@
       "dist_to_middle_of_curve_cm": 11.4
     }
   ]
+
 }
