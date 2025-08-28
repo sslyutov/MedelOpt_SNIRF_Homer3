@@ -139,9 +139,12 @@ In AcqKnowledge, if the trigger(gpio) is set to the ON position before the start
 
 | Field   | Type                             | Description                                                                 |
 |---------|----------------------------------|-----------------------------------------------------------------------------|
-| 🔴`data`  | 2-dimensional Dataset 64-bit floating-point            | First dimension: data which includes three fields<br>timestamp in seconds<br>duration in seconds<>;value - for MedelOpt used only value 1<br> second dimension: measurement index.  
+| 🟢`data`  | 2-dimensional Dataset 64-bit floating-point            | First dimension: data which includes three fields<br>timestamp in seconds<br>duration in seconds<>;value - for MedelOpt used only value 1<br> second dimension: measurement index.  
 Data is organized as:  
-`data[0][0], data[0][1], data[0][2], data[1][0], data[1][1], data[1][2]` <br>
+`data[0][0], data[0][1], data[0][2], data[1][0], data[1][1], data[1][2]`|
+| 🟢`name`  | Scalar Dataset, String  Length = variable, padding = `H5T_STR_NULLTERM`, cset = `H5T_CSET_UTF8`||
+
+addition descrition for two–dimensional array data field:
 - **First dimension** → record index  
 - **Second dimension** → data fields  
 
@@ -149,20 +152,6 @@ Data is organized as:
 |---------------|-----------------|------------|------------|
 | 1 (record index) | Identifies each record | – | Sequential index |
 | 2 (data) | Contains fields for each record | • `timestamp` (seconds)<br>• `duration` (seconds)<br>• `value` (always `1` for MedelOpt) | Fixed structure |
-|
-| 🔴`name`  | Scalar Dataset, String  Length = variable, padding = `H5T_STR_NULLTERM`, cset = `H5T_CSET_UTF8`||
-
-Two–dimensional array:
-
-- **First dimension** → record index  
-- **Second dimension** → data fields  
-
-| **Dimension** | **Description** | **Fields** | **Notes** |
-|---------------|-----------------|------------|------------|
-| 1 (record index) | Identifies each record | – | Sequential index |
-| 2 (data) | Contains fields for each record | • `timestamp` (seconds)<br>• `duration` (seconds)<br>• `value` (always `1` for MedelOpt) | Fixed structure |
-
-
 
 Notes:
 
@@ -202,6 +191,7 @@ It is currently **unknown** whether multiple `aux` groups should be numbered (e.
 |date|description|
 |----|-----------|
 ||no changes|
+
 
 
 
